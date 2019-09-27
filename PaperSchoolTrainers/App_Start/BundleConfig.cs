@@ -9,7 +9,8 @@ namespace PaperSchoolTrainers
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/main.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -23,8 +24,7 @@ namespace PaperSchoolTrainers
                       "~/Scripts/jquery.flexslider-min.js",
                       "~/Scripts/jquery.fancybox.pack.js",
                       "~/Scripts/jquery.waypoints.min.js",
-                      "~/Scripts/retina.min.js",
-                      "~/Scripts/main.js"
+                      "~/Scripts/retina.min.js"
                       ));
 
 

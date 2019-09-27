@@ -1,4 +1,11 @@
-$(document).ready(function() {
+$(document).ready(function () {
+
+
+    alert("ON");
+
+
+
+
 	// Header Scroll
 	$(window).on('scroll', function() {
 		var scroll = $(window).scrollTop();
@@ -64,5 +71,22 @@ $(document).ready(function() {
 	nav.find('a').on('click', function() {
 		$('.nav-toggle').toggleClass('close-nav');
 		nav.toggleClass('open');
-	});
+    });
+
+
+
+
+
+
+    // Sort Arrows
+    $('.sortorder').click(function (e) {
+        
+        $('.fa fa-arrow-circle-down').toggleClass('.fa fa-arrow-circle-up');
+    });
+
+
+
+
+
 });
+
